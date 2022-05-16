@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다채로움</title>
+    <link rel="stylesheet" href="src/write.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="src/datepicker.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="main-content">
+            <form action="#" method="post">
+                <!-- 게시글 작성 유저의 정보도 같이 넘기기 -->
+                <input type="hidden" name="userid" id="userid" />
+                <table>
+                    <tr>
+                        <td>
+                            <span>게시글 제목</span>
+                            <input type="text" name="title" id="title" placeholder="게시글 제목" autofocus required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>일시</span>
+                            <span id="date">
+                                <input type="text" id="datepicker1" required>
+                                <span>~</span>
+                                <input type="text" id="datepicker2" required>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>위치</span>
+                            <input type="text" name="location" id="location" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>내용</div>
+                            <textarea cols="60" rows="10" maxlength="100" name="context" id="context" wrap="soft"
+                                placeholder="게시글 내용을 작성해주세요"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" id="button" value="작성하기">
+                        </td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+
+
+</html>

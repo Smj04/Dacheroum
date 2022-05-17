@@ -1,10 +1,10 @@
 <?php
 $url = 'localhost';
-$id = 'test';
-$pass = '1111';
-$db = 'testdb';
+$id = 'root';
+$pass = '111111';
+$db = 'dacheroum';
 
-$conn = mysqli_connect('localhost', 'test','1111','testdb');
+$conn = mysqli_connect($url, $id, $pass, $db);
 
 
 ?>

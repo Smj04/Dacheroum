@@ -74,7 +74,7 @@
                         <!-- BIRTH_MM -->
                         <div id="bir_mm">
                             <span class="box">
-                                <select id="mm" class="sel" name="user_birth_mm[]" multiple>
+                                <select id="mm" class="sel" name="user_birth_mm">
                                     <option>월</option>
                                     <option value="01">1</option>
                                     <option value="02">2</option>
@@ -107,8 +107,8 @@
                 <div>
                     <h3 class="join_title"><label for="gender">성별</label></h3>
                     <span class="gender_code">
-                        <input type="radio" name="chk_info" value="female" checked> 여성
-                        <input type="radio" name="chk_info" value="male"> 남성
+                        <input type="radio" name="chk_info" value="female" checked/> 여성
+                        <input type="radio" name="chk_info" value="male"/> 남성
                     </span>
                     <span class="error_next_box">필수 정보입니다.</span>
                 </div>
@@ -157,5 +157,4 @@
         });
     </script>
 </body>
-
 </html>
